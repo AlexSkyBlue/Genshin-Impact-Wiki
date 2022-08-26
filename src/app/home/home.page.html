@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Genshin Impact Wiki
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,43 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Genshin Impact Wiki</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card color="geo">
+    <img src="https://i.ibb.co/GFPcH9q/albedo.png"/>
+
+    <ion-card-header>
+      <ion-card-subtitle>Albedo</ion-card-subtitle>
+      <ion-card-title>Albedo</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="people">
+      <ion-icon name="body"></ion-icon>
+      <ion-label>Personajes</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="speakers">
+      <ion-icon name="color-wand"></ion-icon>
+      <ion-label>Armas</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="artefactos">
+      <ion-icon name="color-filter"></ion-icon>
+      <ion-label>Artefactos</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="home">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

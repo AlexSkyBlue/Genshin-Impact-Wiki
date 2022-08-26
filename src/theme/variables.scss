@@ -74,6 +74,14 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /** geo **/
+  --ion-color-geo: #fab632;
+	--ion-color-geo-rgb: 250,182,50;
+	--ion-color-geo-contrast: #000000;
+	--ion-color-geo-contrast-rgb: 0,0,0;
+	--ion-color-geo-shade: #dca02c;
+	--ion-color-geo-tint: #fbbd47;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -232,5 +240,14 @@
     --ion-tab-bar-background: #1f1f1f;
 
     --ion-card-background: #1e1e1e;
+  }
+  
+  .ion-color-geo {
+    --ion-color-base: var(--ion-color-geo);
+    --ion-color-base-rgb: var(--ion-color-geo-rgb);
+    --ion-color-contrast: var(--ion-color-geo-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-geo-contrast-rgb);
+    --ion-color-shade: var(--ion-color-geo-shade);
+    --ion-color-tint: var(--ion-color-geo-tint);
   }
 }
