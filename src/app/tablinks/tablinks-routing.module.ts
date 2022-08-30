@@ -11,13 +11,28 @@ const routes: Routes = [
       {
         path: 'home',
         loadChildren: () => import('../home/home.module').then( m => m.HomePageModule)
-      },{
+      },
+      {
         path: 'tablinks',
         loadChildren: () => import('../tablinks/tablinks.module').then( m => m.TablinksPageModule)
-      },{
-        path: 'perfil',
-        loadChildren: () => import('../perfil/perfil.module').then( m => m.PerfilPageModule)
-      },{
+      },
+      {
+        path: 'artefactos',
+        loadChildren: () => import('../artefactos/artefactos.module').then( m => m.ArtefactosPageModule)
+      },
+      {
+        path: 'personajes',
+        loadChildren: () => import('../personajes/personajes.module').then( m => m.PersonajesPageModule)
+      },
+      {
+        path: 'armas',
+        loadChildren: () => import('../armas/armas.module').then( m => m.ArmasPageModule)
+      },
+      {
+        path: 'mapa',
+        loadChildren: () => import('../mapa/mapa.module').then( m => m.MapaPageModule)
+      },
+      {
         path: "",
         redirectTo: "tablinks/home",
         pathMatch: "full"
