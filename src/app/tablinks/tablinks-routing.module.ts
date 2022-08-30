@@ -28,7 +28,7 @@ const routes: Routes = [
   path: "",
   redirectTo: "tablinks/home",
   pathMatch: "full"
-}
+ }
 ];
 
 @NgModule({
