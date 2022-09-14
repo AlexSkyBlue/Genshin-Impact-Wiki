@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-personajes',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonajesPage implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
