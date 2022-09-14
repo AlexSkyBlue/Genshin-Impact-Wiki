@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-ajustes',
+  templateUrl: './ajustes.page.html',
+  styleUrls: ['./ajustes.page.scss'],
 })
-export class HomePage {
+export class AjustesPage {
 
   toggleTheme(event){
     if(event.detail.checked){
@@ -16,4 +15,5 @@ export class HomePage {
       document.body.removeAttribute('color-theme')
     }
   }
+
 }

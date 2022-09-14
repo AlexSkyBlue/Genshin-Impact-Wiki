@@ -6,6 +6,12 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
+    children: [
+      {
+        path: 'ajustes',
+        loadChildren: () => import('../ajustes/ajustes.module').then(m => m.AjustesPageModule)
+      }
+    ]
   }
 ];
 

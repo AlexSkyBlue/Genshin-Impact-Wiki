@@ -29,6 +29,10 @@ const routes: Routes = [
         loadChildren: () => import('../mapa/mapa.module').then( m => m.MapaPageModule)
       },
       {
+        path: 'ajustes',
+        loadChildren: () => import('../ajustes/ajustes.module').then(m => m.AjustesPageModule)
+      },
+      {
         path: "",
         redirectTo: "tablinks/home",
         pathMatch: "full"

@@ -1,13 +1,28 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Home</ion-title>
+    <ion-title align="center">Home</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-<ion-item>
-  <ion-icon slot="start" name="moon"></ion-icon>
-  <ion-label>Dark Theme</ion-label>
-  <ion-toggle slot="end" (ionChange)='toggleTheme($event)'></ion-toggle>
-</ion-item>
+  <ion-fab vertical="center" horizontal="center" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="share"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button  [routerLink]="['/ajustes']" ><ion-icon name="build-outline"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button><ion-icon name="arrow-down-outline"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="start">
+      <ion-fab-button><ion-icon name="arrow-back-outline"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="end">
+      <ion-fab-button><ion-icon name="arrow-down-outline"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
 </ion-content>
+
+  
