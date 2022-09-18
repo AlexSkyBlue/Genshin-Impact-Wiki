@@ -10,10 +10,17 @@ export class AjustesPage {
   toggleTheme(event){
     if(event.detail.checked){
       document.body.setAttribute('color-theme','dark')
+      document.getElementById('logoGenshinHome').setAttribute('src','/assets/images/LogoGenshinBlanco.png')
     }
     else{
       document.body.removeAttribute('color-theme')
+      document.getElementById('logoGenshinHome').setAttribute('src','/assets/images/LogoGenshinNegro.png')
     }
+
   }
+
+
+
+
 
 }

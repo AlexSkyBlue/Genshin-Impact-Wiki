@@ -1,29 +1,19 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title align="center">Home</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content [fullscreen]="true">
-  <ion-fab vertical="center" horizontal="center" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="star-outline"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-list side="top">
-      <ion-fab-button  [routerLink]="['/ajustes']" ><ion-icon name="build-outline"></ion-icon></ion-fab-button>
-    </ion-fab-list>
-    <ion-fab-list side="bottom">
-      <ion-fab-button><ion-icon name="arrow-down-outline"></ion-icon></ion-fab-button>
-    </ion-fab-list>
-    <ion-fab-list side="start">
-      <ion-fab-button><ion-icon name="arrow-back-outline"></ion-icon></ion-fab-button>
-    </ion-fab-list>
-    <ion-fab-list side="end">
-      <ion-fab-button><ion-icon name="arrow-down-outline"></ion-icon></ion-fab-button>
-    </ion-fab-list>
-  </ion-fab>
   <div align="center">
-    <img src="/assets/images/HomeGenshinWiki-removebg-preview.png"/>
+    <div align="center" style="width: 200px">
+      <img  id="logoGenshinHome" src="/assets/images/LogoGenshinNegro.png"/>
+    </div>
+    <img src="/assets/images/Paimon.png"/>
   </div>
 </ion-content>
 
