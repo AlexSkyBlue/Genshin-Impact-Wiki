@@ -10,11 +10,13 @@ export class AjustesPage {
   toggleTheme(event){
     if(event.detail.checked){
       document.body.setAttribute('color-theme','dark')
-      document.getElementById('logoGenshinHome').setAttribute('src','/assets/images/LogoGenshinBlanco.png')
+      document.getElementById('LogoWikiHome').setAttribute('src','/assets/images/GenshinWikiLogoBlanco.png')
+      document.getElementById('LogoSlide').setAttribute('src','/assets/images/GenshinWikiLogoBlanco.png')
     }
     else{
       document.body.removeAttribute('color-theme')
-      document.getElementById('logoGenshinHome').setAttribute('src','/assets/images/LogoGenshinNegro.png')
+      document.getElementById('LogoWikiHome').setAttribute('src','/assets/images/GenshinWikiLogoNegro.png')
+      document.getElementById('LogoSlide').setAttribute('src','/assets/images/GenshinWikiLogoNegro.png')
     }
 
   }
