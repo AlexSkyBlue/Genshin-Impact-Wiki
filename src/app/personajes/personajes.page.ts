@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { GetsApiService } from '../API/gets-api.service';
 
 @Component({
   selector: 'app-personajes',
@@ -8,10 +8,16 @@ import { NavController } from '@ionic/angular';
 })
 export class PersonajesPage implements OnInit {
 
-  constructor() {
+  PersonajesAPI:any[]=[];
+
+  constructor(public _services: GetsApiService) {
+    this._services.getPersonajes<any[]>("").subscribe(data => {
+      this.PersonajesAPI = data
+    })
   }
 
   ngOnInit() {
+    
   }
 
 }

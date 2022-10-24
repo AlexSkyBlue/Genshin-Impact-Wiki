@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GetsApiService } from '../API/gets-api.service';
+
 
 @Component({
   selector: 'app-artefactos',
@@ -6,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./artefactos.page.scss'],
 })
 export class ArtefactosPage implements OnInit {
+  ArtefactosAPI:any[]=[];
 
-  constructor() { }
+  constructor(public _services: GetsApiService) {
+    this._services.getPersonajes<any[]>("").subscribe(data => {
+      this.ArtefactosAPI = data
+    })
+  }
 
   ngOnInit() {
   }

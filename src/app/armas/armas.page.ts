@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GetsApiService } from '../API/gets-api.service';
 
 @Component({
   selector: 'app-armas',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArmasPage implements OnInit {
 
-  constructor() { }
+  ArtefactosAPI:any[]=[];
+
+  constructor(public _services: GetsApiService) {
+    this._services.getArmas<any[]>("").subscribe(data => {
+      this.ArtefactosAPI = data
+    })
+  }
 
   ngOnInit() {
   }
-
+  
 }

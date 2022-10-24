@@ -20,6 +20,18 @@ export class AjustesPage {
     }
 
   }
+  
+  ngOnInit(){
+    let ColorTheme = document.body.getAttribute('color-theme')
+    if(ColorTheme){
+      document.getElementById('dark_mode').setAttribute('checked','checked')
+    }
+    else{
+      document.getElementById('dark_mode').removeAttribute('checked')
+    }
+  }
+
+
 
 
 
